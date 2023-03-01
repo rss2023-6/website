@@ -25,10 +25,14 @@ body, html {
 }
 
 .team_member {
-    width: 20%; /* Change this so you can fit x Team members in a row*/
+    width: 23%; /* Change this so you can fit x Team members in a row*/
     float: left;
     padding: 0% 6px;
+    margin-left:1%;
+    margin-right: 1%;
     min-height: 500px;
+    border-radius: 1%;
+    position: relative;
 }
 .team_member p {
   font-size: 10px;
@@ -42,15 +46,29 @@ body, html {
 .headshot {
     display: block;
     margin:auto;
-    max-width: 100%;
+    max-width: 90%;
     width: 200px;
     height: 200px;
     max-height: 200px;
     overflow: hidden;
+    margin-top: 2%;
+    border-radius: 100%;
+    border: 2px solid black;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-text{
+  margin: auto;
+  padding-left: 10%;
+}
+
+.nav-img{
+  width: 20px;
 }
 </style>
 
@@ -59,13 +77,13 @@ body, html {
 <!-- MAKE SURE YOU GET THE RELATIVE PATHS RIGHT FOR THE NAV BAR!!!!-->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">RSS Team TA</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide">RSS Team 6</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="labs/" class="w3-bar-item w3-button"><i class="fa fa-folder"></i>Labs</a>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="w3-bar-item w3-button"><i class="fa fa-camera"></i>Videos</a>
-      <a href="https://github.com/mit-rss" class="w3-bar-item w3-button"><i class="fa fa-github-square"></i>Github</a>
+      <a href="labs/" class="w3-bar-item w3-button"><i class="fa fa-folder"></i><p class="nav-text">Labs</p></a>
+      <a href="https://www.skyreachers.com/journeys?id=90403afb-6da2-4f5d-be09-d6559816a824" class="w3-bar-item w3-button"><img class="nav-img" src="img/GreyScaleSkyReachers.png"></img><p class="nav-text">Journey</p></a>
+      <a href="https://github.com/rss2023-6" class="w3-bar-item w3-button"><i class="fa fa-github-square"></i><p class="nav-text">Github</p></a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -79,10 +97,10 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close X</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-  <a href="labs/" onclick="w3_close()" class="w3-bar-item w3-button">Labs</a>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" onclick="w3_close()" class="w3-bar-item w3-button">Videos</a>
-  <a href="https://github.com/mit-rss" onclick="w3_close()" class="w3-bar-item w3-button">Github</a>
+  <a href="#about" class="w3-bar-item w3-button">About</a>
+  <a href="labs/index.html" class="w3-bar-item w3-button"><i class="fa fa-folder"></i><p class="nav-text">Labs</p></a>
+  <a href="https://www.skyreachers.com/journeys?id=90403afb-6da2-4f5d-be09-d6559816a824" class="w3-bar-item w3-button"><img class="nav-img" src="img/GreyScaleSkyReachers.png"></img><p class="nav-text">Journey</p></a>
+  <a href="https://github.com/rss2023-6" class="w3-bar-item w3-button"><i class="fa fa-github-square"></i><p class="nav-text">Github</p></a>
 </nav>
 <!-- End of repeated content on each page-->
 
@@ -90,8 +108,8 @@ body, html {
 <!-- Header with full-height image -->
 <header class="title_img w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-bottommiddle w3-text-white w3-center">
-    <h1>Team TA!</h1>
-    <p><a href="https://youtu.be/xLZU6TcSmRo" style="width:100%" class="w3-button w3-white w3-opacity w3-hover-opacity-off">
+    <h1>Team 6!</h1>
+    <p><a style="width:100%" class="w3-button w3-white w3-opacity w3-hover-opacity-off">
         Innovation starts somewhere, so why not let it start here?
     </a></p>
   </div>
@@ -99,6 +117,20 @@ body, html {
 
 <div class="w3-container w3-white" style="padding:5% 5%">
   <div class="w3-card team_member">
+      <img class="headshot" src="img/Nico.jpg">
+      <h4><b>Nico van Wijk</b></h4>
+      <p style="text-align: center;">nvanwijk@mit.edu</p>
+      <p style="text-align: justify; margin: 2%; font-size: medium;">Nico is a senior in course 6-9 with relevant experience in leadership, logistics and management for the RSS team. He is also the CEO of SkyReachers - a productivity tool being incorporated into team 6's progress tracking.
+      </p>
+  </div>
+  <div class="w3-card team_member">
+      <img class="headshot" src="img/r2.jpg">
+      <h4>Tim Beaver</h4>
+      <p style="text-align: center">tbeaver@mit.edu</p>
+      <p>These are some template bios; fill this in for each of your team members!
+      </p>
+  </div>
+  <div class="w3-card team_member">
       <img class="headshot" src="img/wall_e.jfif">
       <h4>Tim Beaver</h4>
       <p>tbeaver@mit.edu</p>
@@ -107,27 +139,6 @@ body, html {
   </div>
   <div class="w3-card team_member">
       <img class="headshot" src="img/r2.jpg">
-      <h4>Tim Beaver</h4>
-      <p>tbeaver@mit.edu</p>
-      <p>These are some template bios; fill this in for each of your team members!
-      </p>
-  </div>
-  <div class="w3-card team_member">
-      <img class="headshot" src="img/wall_e.jfif">
-      <h4>Tim Beaver</h4>
-      <p>tbeaver@mit.edu</p>
-      <p>These are some template bios; fill this in for each of your team members!
-      </p>
-  </div>
-  <div class="w3-card team_member">
-      <img class="headshot" src="img/r2.jpg">
-      <h4>Tim Beaver</h4>
-      <p>tbeaver@mit.edu</p>
-      <p>These are some template bios; fill this in for each of your team members!
-      </p>
-  </div>
-  <div class="w3-card team_member">
-      <img class="headshot" src="img/wall_e.jfif">
       <h4>Tim Beaver</h4>
       <p>tbeaver@mit.edu</p>
       <p>These are some template bios; fill this in for each of your team members!
