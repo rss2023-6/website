@@ -2,6 +2,8 @@
 
 This is a generic template for your team website hosted on github pages.
 
+See this website at https://rss2023-6.github.io/website/
+
 ## Modifying the template
 
 You can change the template design as much as you want - this website is pretty boring right now. Use pictures, videos, gifs and stories from your RSS experience to make this website pop! There are a couple constraints however. First, your lab reports must remain accessible at these links:
